@@ -1,22 +1,6 @@
 <!DOCTYPE html>
+
 <html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matilda Pitt: Personal Website</title>
-    <style>
-        body { font-family: sans-serif; text-align: center; padding: 50px; }
-    </style>
-</head>
-<body>
-    <h1>Hi, I'm Matilda Pitt </h1>
-    <p>Welcome to my personal site hosted on GitHub Pages.</p>
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,6 +15,43 @@
       color: #222;
       background: #fff;
     }
+/* Pale purple ambient splodge */
+body::before {
+  content: "";
+  position: fixed;
+  top: 300px;
+  right: 800px;
+  width: 380px;
+  height: 380px;
+  background:#e9d5ff; /* Pale lavender purple */
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; /* Organic shape */
+  filter: blur(70px);  /* Blurs the edges into a soft splodge */
+  z-index: -1;          /* Keeps it behind all text and images */
+  pointer-events: none; /* Prevents it from interfering with clicks */
+}
+
+/* Pale blue ambient splodge */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0px;
+  right: 300px;
+  width: 380px;
+  height: 380px;
+  background: #e0f3f4; /* Pale blue purple */
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; /* Organic shape */
+  filter: blur(70px);  /* Blurs the edges into a soft splodge */
+  z-index: -1;          /* Keeps it behind all text and images */
+  pointer-events: none; /* Prevents it from interfering with clicks */
+}
+.profile-pic {
+  width: 150px;           /* Controls the image width */
+  height: 150px;          /* Makes it a square */
+  object-fit: cover;      /* Prevents stretching */
+  border-radius: 50%;     /* Makes the photo circular */
+  margin-bottom: 15px;    /* Adds space below the image */
+ float: right;
+}
 
     /* Header & Navigation */
     nav {
@@ -75,8 +96,12 @@
 <body>
 
   <header>
+<img src="profile.jpg" alt="Your Name" class="profile-pic">
     <h1>Matilda Pitt</h1>
+
     <p>PhD Candidate in Biostatistics at the MRC BSU, University of Cambridge</p>
+
+
     
     <nav>
       <button id="btn-welcome" class="active" onclick="showTab('welcome')">Welcome</button>
@@ -89,7 +114,7 @@
     <!-- WELCOME TAB -->
     <section id="welcome" class="tab-content active">
       <h2>Welcome</h2>
-      <p>Hello! Welcome to my personal website. </p>
+      <p>I am a 3rd Year PhD student researching statistical methods for the analysis of Electronic Health Records, in particulalry in the area of Survival analysis. I previously worked at City St Georges', University of London and studied at McMaster University  and Durham University. </p>
       <p>
 
         <a href="https://github.com/Tilly-Pitt">GitHub</a> | 
@@ -100,10 +125,10 @@
     <!-- PUBLICATIONS TAB -->
     <section id="publications" class="tab-content">
       <h2>Publications</h2>
-      
+      <p> Here are some of my recent publications:
       <div class="item">
-        <strong>Paper Title One</strong>
-        <div class="meta">Your Name, Co-Author (2025) &bull; Journal Name</div>
+        <strong>A new bivariate cure rate model and its application to diabetic retinopathy</strong>
+        <div class="meta">Matilda Pitt, Katherine Davies (2026) &bull; Statistical Methods in Medical Research</div>
        /* <a href="#">[PDF]</a> <a href="#">[Code]</a> */
       </div>
 
@@ -113,7 +138,7 @@
     <section id="other" class="tab-content">
       <h2>Other Projects & Work</h2>
       <ul>
-        <li><strong>YSM:</strong> YSM co-chair</li>
+        <li><strong>YSM:</strong> I was co-chair for YSM 2026 held at the University of Cambridge 29th-31st July.</li>
 
       </ul>
     </section>
