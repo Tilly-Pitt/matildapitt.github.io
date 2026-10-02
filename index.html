@@ -52,6 +52,20 @@ body::after {
   margin-bottom: 15px;    /* Adds space below the image */
  float: right;
 }
+    /* Pale pink ambient splodge */
+html::after {
+  content: "";
+  position: fixed;
+  top: 0px;
+  right: 1000px;
+  width: 380px;
+  height: 380px;
+  background: #fce7f3; /* Pale pink */
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; /* Organic shape */
+  filter: blur(70px);  /* Blurs the edges into a soft splodge */
+  z-index: -1;          /* Keeps it behind all text and images */
+  pointer-events: none; /* Prevents it from interfering with clicks */
+}
 
     /* Header & Navigation */
     nav {
@@ -113,8 +127,8 @@ body::after {
     <!-- WELCOME TAB -->
     <section id="welcome" class="tab-content active">
       <h2>Welcome</h2>
-      <p>I am a 3rd Year PhD student researching statistical methods for the analysis of Electronic Health Records, in particulalry in the area of Survival analysis. <br>
-        I previously worked at City St Georges', University of London and studied at McMaster University  and Durham University. </p>
+      <p>I am a 3rd Year PhD student researching statistical methods for the analysis of Electronic Health Records, in particulalry in the area of Survival analysis. <br>      </p>
+      <p> I previously worked at City St Georges', University of London and studied at McMaster University  and Durham University. </p>
       <p>
 
         <a href="https://github.com/Tilly-Pitt">GitHub</a> | 
@@ -137,7 +151,7 @@ body::after {
     <section id="other" class="tab-content">
       <h2>Other Projects & Work</h2>
       <ul>
-        <li><strong>YSM:</strong> I was co-chair for YSM 2026 held at the University of Cambridge 29th-31st July.</li>
+        <li><strong>YSM:</strong> I was co-chair for the Young Statisticians' Meeting 2026 held at the University of Cambridge from the 29th-31st July.</li>
 
       </ul>
     </section>
