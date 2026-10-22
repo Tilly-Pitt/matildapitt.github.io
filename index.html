@@ -97,14 +97,6 @@ html::after {
     .item { margin-bottom: 20px; }
     .meta { color: #666; font-size: 14px; }
 
-    /* Automatic Dark Mode */
-    @media (prefers-color-scheme: dark) {
-      body { color: #eee; background: #121212; }
-      a { color: #64b5f6; }
-      .meta { color: #aaa; }
-      nav button { color: #eee; border-color: #444; }
-      nav button.active { background: #2563eb; border-color: #2563eb; color: #fff; }
-    }
   </style>
 </head>
 <body>
@@ -119,7 +111,7 @@ html::after {
     <nav>
       <button id="btn-welcome" class="active" onclick="showTab('welcome')">Welcome</button>
       <button id="btn-publications" onclick="showTab('publications')">Publications</button>
-      <button id="btn-other" onclick="showTab('other')">Other</button>
+      <button id="btn-other" onclick="showTab('other')">Other activities</button>
     </nav>
   </header>
 
@@ -127,9 +119,9 @@ html::after {
     <!-- WELCOME TAB -->
     <section id="welcome" class="tab-content active">
       <h2>Welcome</h2>
-      <p>I am a 3rd Year PhD student researching statistical methods for the analysis of Electronic Health Records, in particulalry in the area of Survival analysis. <br>      </p>
+      <p>I am a 3rd Year PhD student researching statistical methods for the analysis of Electronic Health Records, in particular in the area of Survival analysis. <br>      </p>
       <p>I previously worked at City St Georges', University of London and studied at McMaster University  and Durham University. </p>
-      <p>I am also enthusiastic about public engagement in (bio)statistics and keen to participate and expand Early Career Researcher communities.
+      <p>I am also enthusiastic about public engagement in (bio)statistics and keen to participate and expand Early Career Researcher communities. </p>
 
         <a href="https://github.com/Tilly-Pitt">GitHub</a> | 
         <a href="https://www.linkedin.com/in/matilda-pitt-7785a11b2">LinkedIn</a>
@@ -164,6 +156,9 @@ html::after {
 
       <p> On Epidemiology:
         <div class="item">
+        <strong>Risk prediction in patients with heart failure with preserved ejection fraction: the LIFE-Preserved model </strong>
+        <div class="meta"> Tessa H Reitsma et. al (2026) &bull; European Heart Journal </div>
+        <div class="item">
         <strong>European trends in mortality in children with congenital anomalies: 2000–2015 </strong>
         <div class="meta"> Matilda Pitt and Joan Morris (2021) &bull; Birth Defects Research </div>
       </div>
@@ -176,7 +171,14 @@ html::after {
     <section id="other" class="tab-content">
       <h2>Other Projects & Work</h2>
       <ul>
-        <li><strong>YSM:</strong> I was co-chair for the Young Statisticians' Meeting 2026 held at the University of Cambridge from the 29th-31st July. <a href="https://sites.google.com/view/youngstatsmeeting/home">YSM 2026 </a> </li>
+        <li><strong>YSM:</strong> I was co-chair for the Young Statisticians' Meeting 2026 held at the University of Cambridge from the 29th-31st July. <a href="https://sites.google.com/view/youngstatsmeeting/home">YSM 2026 </a>. I am on the committee for YSM 2027 </li>
+        <li><strong>Health Research from Home Hackathon 2026, Manchester, UK:</strong> I helped organise this hackathon for Early Career Researchers. </li>
+      </ul>
+      <h2> Recent and Upcoming travel</h2>
+            <ul>
+        <li><strong>IBC 2026, Seoul, South Korea:</strong> I attended and gave a presentation.</li>
+        <li><strong>ISBA 2026, Nagoya, Japan:</strong> I attended and presented a poster.</li> 
+          <li><strong>SAFJR 2026, Amsterdam, Netherlands:</strong> I attended and gave a presentation.</li>
 
       </ul>
     </section>
